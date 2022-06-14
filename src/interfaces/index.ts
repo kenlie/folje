@@ -5,6 +5,16 @@
 // import { User } from 'path/to/interfaces';
 
 export type User = {
-  id: number
-  name: string
+  id: number;
+  name: string;
+};
+
+interface AnimationColors {
+  main: string;
+  skin?: string;
+}
+
+export interface AnimationProps {
+  style?: any;
+  colors: AnimationColors;
 }
